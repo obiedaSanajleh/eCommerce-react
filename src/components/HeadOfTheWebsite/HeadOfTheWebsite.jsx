@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeadOfTheWebsite.css';
+import './../HeadOfTheWebsite/HeadOfTheWebsite.css'
 import iphoneImage from './../../assets/img/iphone.png'
 
 import { useEffect } from'react'
