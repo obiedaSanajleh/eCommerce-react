@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', cursive;
+
+}
+
+
+.container-delivery-section{
+    width: 80%;
+    margin: auto;
+}
+
+.row-delivery-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.delivery-section {
+    padding: 20px 0px ;
+   
+}
+
+.delivery-section .description-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.delivery-section .description-part{
+    width: calc(50% - 20px);
+}
+.delivery-section .description-part h3{
+    font-size: 40px;
+   
+}
+
+.delivery-section .description-part p{
+    font-size: 18px;
+    
+}
+
+.delivery-section .description-part button{
+    background-color: #FF6543;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: 1s ease;
+}
+
+.delivery-section .description-part button:hover{
+    background-color: #D34336;
+    
+    padding: 10px 50px;
+}
+
+.delivery-section .img-part{
+    width: calc(50% - 20px);
+}
+
+.delivery-section .img-part img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+
+
+}
+
+@media (max-width: 1399px) {  }
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  
+    .container-delivery-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .delivery-section .description-part h3{
+        font-size: 25px;
+       
+    }
+    
+    .delivery-section .description-part p{
+        font-size: 12px;
+        
+    }
+    
+    .delivery-section .description-part button{
+        background-color: #FF6543;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: 1s ease;
+    }
+    .delivery-section .description-part button:hover{
+        background-color: #D34336;
+        
+        padding: 10px 50px;
+    }
+}
+
+
+@media (max-width: 575px) { 
+
+
+}
+
+@media (max-width: 480px) {
+    .delivery-section .description-part h3{
+        font-size: 18px;
+       
+    }
+    
+    .delivery-section .description-part p{
+        font-size:8px;
+        
+    }
+    
+    .delivery-section .description-part button{
+        background-color: #FF6543;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: 1s ease;
+    }
+    .delivery-section .description-part button:hover{
+        background-color: #D34336;
+        
+        padding: 10px 50px;
+    }
+}
+

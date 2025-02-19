@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.end-of-the-website{
+    padding: 50px 0px;
+}
+.end-of-the-website-container{
+    width: 80%;
+    margin: auto;
+
+}
+.end-of-the-website-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.end-of-the-website .start{
+    display: flex;
+    width: 30%;
+    text-align: left;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+.end-of-the-website .start .logo-part{
+    width: 50%;
+
+}
+
+.end-of-the-website .start .logo-part img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.end-of-the-website .start p{
+  font-size:12px;
+
+}
+
+.end-of-the-website .center{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    gap: 25px;
+}
+.end-of-the-website ul{
+    font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+
+} 
+.end-of-the-website ul  a li{
+    color: black;
+    text-decoration: none;
+ 
+}
+
+
+.end-of-the-website ul a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+.end-of-the-website ul li a:hover{
+    color: #FF6543;
+}
+
+.end-of-the-website .end{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    gap: 25px;
+}
+
+.end-of-the-website .end button{
+    padding: 10px 20px;
+    background-color: #FF6543;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+.NavLink{
+    color: white !important;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+.end-of-the-website .end button:hover{
+    background-color: #D34336;
+}
+@media (max-width: 1399px) {  }
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  
+    .end-of-the-website-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+ 
+ 
+
+    .end-of-the-website-row{
+        flex-direction: column;
+        gap: 30px;
+  
+    }
+
+
+    .end-of-the-website-row .start{
+     width: 90%;
+     text-align: center;
+     align-items: center;
+    }
+
+    .end-of-the-website-row .center{
+        width: 90%;
+       }
+       .end-of-the-website-row .end{
+        width: 90%;
+       }
+}
+
+@media (max-width: 575px) { }

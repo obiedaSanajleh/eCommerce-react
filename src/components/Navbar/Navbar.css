@@ -1,0 +1,244 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+  
+    background-color: #fff;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-navbar{
+    width: 80%;
+    margin: auto;
+ 
+
+
+}
+
+.row-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #FFF;
+    
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo-part{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    padding: 0;
+    margin: 0;
+    
+}
+header .logo-part img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+header .row-navbar nav ul{
+    font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+
+} 
+header .row-navbar nav ul a li{
+    color: black;
+    text-decoration: none;
+ 
+}
+
+
+
+header .row-navbar nav ul a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+header .row-navbar nav ul li a:hover{
+    color: #FF6543;
+}
+header .utility-icons{
+    display: flex;
+
+    font-size: 1rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+}
+
+header .utility-icons i{
+    cursor: pointer;
+    transition: 1s ease;
+}
+header .utility-icons i:hover{
+    color: #FF6543;
+    
+}
+.nav-phone-size-btn{
+    display: none;
+}
+
+header .row-navbar .nav-phone-size{
+    width: 100%;
+    padding: 10px;
+   background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+header .row-navbar .nav-phone-size ul{
+    font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+
+} 
+header .row-navbar .nav-phone-size ul a li{
+    color: black;
+    text-decoration: none;
+   
+ 
+}
+
+
+
+header .row-navbar  .nav-phone-size  ul a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease;
+    font-size: 0.7rem;
+}
+header .row-navbar .nav-phone-size  ul li a:hover{
+    color: #FF6543;
+}
+
+
+
+header .row-navbar .nav-phone-size-in{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top:5%;
+    left: 0%;
+   
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;
+    transition: 1s ease;
+
+
+}
+
+header .row-navbar .nav-phone-size-out{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top:5%;
+    left: -100%;
+   
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 100;
+    transition: 1s ease;
+
+}
+
+
+@media (max-width: 1399px) {  }
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  
+    .container-navbar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+ 
+   nav{
+    display: none ;
+   }
+   .nav-phone-size-btn{
+    display: block !important;
+}
+
+    header .utility-icons{
+        font-size: 0.7rem;
+  }
+  header .logo-part {
+    width: 35%;
+}
+}
+
+@media (max-width: 575px) { }
+
+
+
+
+
+
+
+/* @media (max-width: 1399px) {  }
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  }
+
+@media (max-width: 767px) {  }
+
+@media (max-width: 575px) { } */

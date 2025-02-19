@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', cursive;
+
+}
+
+.container-head-of-the-website{
+    width: 80%;
+    margin: auto;
+}
+
+.row-head-of-the-website{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.Head-of-the-website {
+    padding: 20px 0px ;
+   
+}
+
+.Head-of-the-website .description-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.Head-of-the-website .description-part{
+    width: calc(50% - 20px);
+}
+.Head-of-the-website .description-part h3{
+    font-size: 40px;
+   
+}
+
+.Head-of-the-website .description-part p{
+    font-size: 18px;
+    
+}
+
+.Head-of-the-website .description-part button{
+    background-color: #FF6543;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: 1s ease;
+}
+
+.Head-of-the-website .description-part button:hover{
+    background-color: #D34336;
+    
+    padding: 10px 50px;
+}
+
+.Head-of-the-website .img-part{
+    width: calc(50% - 20px);
+}
+
+.Head-of-the-website .img-part img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+
+
+}
+
+@media (max-width: 1399px) {  }
+
+@media (max-width: 1199px) {  }
+
+@media (max-width: 991px) {  
+    .container-head-of-the-website{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Head-of-the-website .description-part h3{
+        font-size: 25px;
+       
+    }
+    
+    .Head-of-the-website .description-part p{
+        font-size: 12px;
+        
+    }
+    
+    .Head-of-the-website .description-part button{
+        background-color: #FF6543;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: 1s ease;
+    }
+    .Head-of-the-website .description-part button:hover{
+        background-color: #D34336;
+        
+        padding: 10px 50px;
+    }
+}
+
+
+@media (max-width: 575px) { 
+
+
+}
+
+@media (max-width: 480px) {
+    .Head-of-the-website .description-part h3{
+        font-size: 25px;
+       
+    }
+    
+    .Head-of-the-website .description-part p{
+        font-size: 12px;
+        
+    }
+    
+    .Head-of-the-website .description-part button{
+        background-color: #FF6543;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: 1s ease;
+    }
+    .Head-of-the-website .description-part button:hover{
+        background-color: #D34336;
+        
+        padding: 10px 50px;
+    }
+}
+
