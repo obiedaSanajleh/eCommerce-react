@@ -10,6 +10,7 @@ import {
   faHeart,
   faCartShopping,
   faGripLines,
+
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
@@ -20,6 +21,7 @@ function Navbar() {
   };
 
   let navigate = useNavigate();
+  const token = localStorage.getItem("token"); 
 
   const handelClickNavPhoneSize = ()=>{
     const navbar = document.querySelector(".nav-phone-size");
@@ -36,6 +38,10 @@ const aboutHandelclick= async () => {
       
 
 }
+const handleLogOutClick = () => {
+  localStorage.removeItem("token");
+  navigate("/");
+};
 
 
   return (
@@ -84,9 +90,22 @@ const aboutHandelclick= async () => {
             <i>
               <FontAwesomeIcon onClick={()=>{navigate('/favorite')}} icon={faHeart} />
             </i>
+         
+            
             <i>
               <FontAwesomeIcon onClick={()=>{navigate('/cart')}} icon={faCartShopping} />
             </i>
+
+            {token === null ? (
+              <i>
+                <FontAwesomeIcon onClick={() => navigate("/user")} icon={faUser} />
+              </i>
+            ) : (
+              <i>
+                <button onClick={handleLogOutClick}>Logout</button>
+              </i>
+            )}   
+
           </div>
 
           <div className="nav-phone-size nav-phone-size-out" onClick={handelClickNavPhoneSize}>

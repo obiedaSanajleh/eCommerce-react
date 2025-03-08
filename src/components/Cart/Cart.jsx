@@ -31,7 +31,7 @@ function Cart() {
    
   
   
-      // Navigate to the product page with the selected product ID
+   
   
      
       navigate("/product", { state: { productId : productId } });

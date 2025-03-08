@@ -15,6 +15,8 @@ import SingleProduct from './components/SingleProduct/SingleProduct';
 import Cart from './components/Cart/Cart';
 import Favorite from './components/Favorite/Favorite';
 import {ContextProvider} from './context/Context';
+import User from './components/User/User';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/favorite" element={<Favorite />} />
       <Route path="/product" element={<SingleProduct />} />
+      <Route path="/user" element={<User />} />
+      <Route path="/signup" element={<SignUp/>} />
 
       
     </Routes>
